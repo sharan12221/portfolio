@@ -5,10 +5,11 @@ export function Skills() {
     {
       title: 'Blockchain Skills',
       skills: [
-        'Ethereum (Solidity, Web3.js)',
+        'Ethereum (Solidity, ethers.js)',
         'Hyperledger Fabric',
         'Hyperledger Besu',
         'Smart Contract Development',
+        'Hardhat'
       ],
     },
     {
@@ -20,7 +21,6 @@ export function Skills() {
         'Linux',
         'Bash Scripting',
         'Azure Kubernetes Service (AKS)',
-        'CI/CD Pipelines',
       ],
     },
     {
@@ -28,8 +28,6 @@ export function Skills() {
       skills: [
         'JavaScript (Node.js)',
         'Solidity',
-        'Python',
-        'Go',
       ],
     },
     {
@@ -37,8 +35,7 @@ export function Skills() {
       skills: [
         'IPFS',
         'Blockchain Explorers',
-        'Cloud Platforms (AWS, Azure, GCP)',
-        'React',
+        'Cloud Platforms (AWS, Azure)',
       ],
     },
   ];
