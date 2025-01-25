@@ -13,27 +13,27 @@ export function Contact() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:sharanwakade@gmail.com"
               className="flex flex-col items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Mail size={32} className="text-gray-700 mb-4" />
               <h3 className="text-lg font-semibold mb-2">Email</h3>
-              <p className="text-gray-600">your.email@example.com</p>
+              <p className="text-gray-600">sharanwakade@gmail.com</p>
             </a>
             
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/sharan12221"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Github size={32} className="text-gray-700 mb-4" />
               <h3 className="text-lg font-semibold mb-2">GitHub</h3>
-              <p className="text-gray-600">@yourusername</p>
+              <p className="text-gray-600">@sharan12221</p>
             </a>
             
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/sharanappa-wakade-76238a256"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
