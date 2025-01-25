@@ -7,18 +7,18 @@ export function About() {
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "Blockchain Development",
-      description: "Expert in Ethereum, Hyperledger Fabric, and smart contracts"
+      description: "Expert in Hyperledger Fabric, Ethereum, and smart contracts"
     },
     {
       icon: <Terminal className="w-6 h-6" />,
-      title: "DevOps Engineering",
-      description: "Skilled in Docker, Kubernetes, and cloud infrastructure"
+      title: "DevOps",
+      description: "Skilled in Docker, Kubernetes, and cloud infrastructure (aks/eks)"
     },
-    {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Full Stack",
-      description: "End-to-end development with modern technologies"
-    },
+    // {
+    //   icon: <Globe className="w-6 h-6" />,
+    //   title: "Full Stack",
+    //   description: "End-to-end development with modern technologies"
+    // },
     {
       icon: <Server className="w-6 h-6" />,
       title: "System Architecture",
