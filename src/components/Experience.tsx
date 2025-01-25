@@ -6,7 +6,7 @@ export function Experience() {
     {
       company: 'Chikitsa.io',
       role: 'Blockchain Developer',
-      period: '2022 - Present',
+      period: '2024 - Present',
       description: [
         'Developed a healthcare data management system on Hyperledger Fabric, ensuring the secure transfer and storage of patient records.',
         'Implemented Hyperledger Explorer for real-time blockchain monitoring.',
@@ -16,7 +16,7 @@ export function Experience() {
     {
       company: 'Mobiloitte',
       role: 'Blockchain Developer',
-      period: '2021 - 2022',
+      period: '2023 - 2024',
       description: [
         'Built a DEX arbitrage bot focusing on Ethereum-based smart contracts and automated trading strategies.',
         'Developed Node.js backend services to track token prices across multiple platforms.',
