@@ -29,7 +29,7 @@ export function Projects() {
         "Integrated Hyperledger Explorer for real-time blockchain monitoring and auditing",
         "Leveraged Kubernetes for scalable deployment, enabling high availability and fault-tolerance"
       ],
-      technologies: ["Hyperledger Fabric", "Node.js", "Docker", "Kubernetes", "CouchDB"],
+      technologies: ["Hyperledger Fabric", "Node.js", "Docker", "Kubernetes", "IPFS", "aws-s3","CouchDB"],
       outcome: "Streamlined healthcare data sharing with robust security and audit capabilities, reducing manual record-keeping errors and enhancing patient privacy.",
       icons: {
         main: <Shield className="w-6 h-6" />,
@@ -46,7 +46,7 @@ export function Projects() {
         "Integrated secure wallet services to handle on-chain transactions and private key management",
         "Employed Docker for containerization, ensuring smooth deployment and consistent environment setups"
       ],
-      technologies: ["Ethereum", "Solidity", "Node.js", "Docker", "Web3.js"],
+      technologies: ["Ethereum", "Solidity", "Node.js", "Docker", "ethers.js"],
       outcome: "Delivered a DEX arbitrage bot capable of quickly detecting and acting on price discrepancies, helping users maximize returns in a dynamic DeFi ecosystem.",
       icons: {
         main: <Server className="w-6 h-6" />,
@@ -63,7 +63,7 @@ export function Projects() {
         "Integrated cloud storage services for scalable, cost-efficient file storage",
         "Deployed on Kubernetes for high availability, employing Docker containers for modular services"
       ],
-      technologies: ["Hyperledger Fabric", "Node.js", "Docker", "Kubernetes", "Cloud Storage"],
+      technologies: ["Hyperledger Fabric", "Node.js", "Docker", "Kubernetes", "Cloud Storage", "ZFS", "HSM"],
       outcome: "Enabled clients to securely upload, manage, and track file usage with cryptographically enforced permissions, ensuring data integrity and regulatory compliance.",
       icons: {
         main: <Database className="w-6 h-6" />,
