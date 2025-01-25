@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code2, Terminal, Globe, Server } from 'lucide-react';
+import myImage from './myImage.jpg';
 
 export function About() {
   const highlights = [
@@ -42,7 +43,7 @@ export function About() {
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative rounded-lg overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-500">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src={myImage}
                   alt="Professional headshot"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />

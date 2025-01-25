@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ChevronDown, Globe, Code, Terminal } from 'lucide-react';
+import myImage from './myImage.jpg';
 
 export function Hero() {
   return (
@@ -23,7 +24,7 @@ export function Hero() {
               </h1>
               <h2 className="text-2xl md:text-3xl text-white/90 mb-8 animate-slide-in-left [animation-delay:400ms] flex items-center gap-3">
                 <Code className="w-8 h-8 text-emerald-200" />
-                Blockchain & DevOps Engineer
+                Blockchain Engineer
               </h2>
             </div>
             
@@ -33,7 +34,7 @@ export function Hero() {
             
             <div className="flex flex-wrap gap-6 mb-12 animate-slide-in-left [animation-delay:800ms]">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sharan12221"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative"
@@ -48,7 +49,7 @@ export function Hero() {
               </a>
               
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/sharanappa-wakade-76238a256"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative"
@@ -63,7 +64,7 @@ export function Hero() {
               </a>
               
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:sharanwakade@gmail.com"
                 className="group relative"
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
@@ -82,7 +83,7 @@ export function Hero() {
             <div className="relative aspect-square overflow-hidden rounded-full border-4 border-white/50">
               {/* Replace this URL with your actual profile picture URL */}
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src={myImage}
                 alt="Sharanappa Wakade"
                 className="w-full h-full object-cover transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
               />
