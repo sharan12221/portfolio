@@ -15,6 +15,8 @@ export function Skills() {
     {
       title: 'DevOps Skills',
       skills: [
+        'Azure',
+        'Azure Devops',
         'Git',
         'Docker',
         'Kubernetes',
