@@ -14,6 +14,6 @@ RUN npm run build
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
 
-EXPOSE 80
+EXPOSE 5174
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD [" npm run dev"]
