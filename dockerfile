@@ -14,9 +14,6 @@ RUN ls -alh
 # Build the app
 RUN npm run build
 
-# Show output to verify build folder exists
-RUN ls -alh build
-
 # Stage 2: Serve with nginx
 FROM nginx:alpine
 
