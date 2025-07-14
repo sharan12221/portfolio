@@ -1,19 +1,17 @@
-# Stage 1: Build React app
-FROM node:18 AS build
+FROM node:18
 
+# Set working directory
 WORKDIR /app
 
+# Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install
 
+# Copy the rest of the application
 COPY . .
 
-# This must create a /app/build directory
-RUN npm run build
-
-# Stage 2: Serve with Nginx
-FROM nginx:alpine
-
+# Expose the port Vite uses by default
 EXPOSE 5174
 
-CMD [" npm run dev"]
+# Start the Vite dev server
+CMD ["npm", "run", "dev"]
