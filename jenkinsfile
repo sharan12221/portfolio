@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+
+    environment {
+        REPO_URL = 'git@github.com:sharan12221/portfolio.git'
+        BRANCH = 'main'
+        DEPLOY_DIR = '/var/www/portfolio'  // adjust for your server
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: "${BRANCH}", url: "${REPO_URL}"
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                echo "Installing dependencies..."
+                sh 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Building the project..."
+                sh 'npm run build'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying to production directory..."
+                // Make sure Jenkins has write access
+                sh '''
+                rm -rf ${DEPLOY_DIR}/*
+                cp -r build/* ${DEPLOY_DIR}/
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Deployment successful!'
+        }
+        failure {
+            echo '❌ Build or Deployment failed!'
+        }
+    }
+}
