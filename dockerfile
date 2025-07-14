@@ -1,33 +1,33 @@
-# Stage 1: Build React app with Node 18
+# Stage 1: Build React app
 FROM node:18-alpine AS build
 
-# Set working directory
 WORKDIR /app
-
-# Copy only package files to install dependencies
 COPY package*.json ./
+
 RUN npm install
 
-# Copy the rest of the project files
 COPY . .
 
-# Build the project
+# Optional: show directory before build
+RUN ls -alh
+
+# Build the app
 RUN npm run build
 
-# Stage 2: Serve using Nginx
+# Show output to verify build folder exists
+RUN ls -alh build
+
+# Stage 2: Serve with nginx
 FROM nginx:alpine
 
-# Remove default nginx index page
+# Clean default HTML page
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy build output to Nginx directory
+# Copy build output
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Copy custom nginx config if needed (optional)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Expose port 80
+# Expose port
 EXPOSE 80
 
-# Start Nginx
+# Run nginx
 CMD ["nginx", "-g", "daemon off;"]
